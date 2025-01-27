@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x800.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+/* Product Cards */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #34C759;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background-color: #2aa44f;
+}
+
+/* Feature Badge */
+.feature-badge {
+    background-color: #34C759;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+}
