@@ -1,0 +1,63 @@
+.border-md {
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.btn-facebook {
+    background: #405D9D;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background: #314879;
+}
+
+.btn-twitter {
+    background: #42AEEC;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background: #1799e4;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.form-control:not(select) {
+    padding: 1.5rem 0.5rem;
+    border-radius: 5px;
+}
+
+select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #80bdff;
+}
+
+.btn-primary {
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: #0056b3;
+}
