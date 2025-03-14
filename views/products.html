@@ -1,79 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Page</title>
+  <title>Luxury Cars - Product Page</title>
   <link rel="stylesheet" href="products.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <nav class="navbar">
     <a href="../index.html" class="nav-button">Home</a>
-    <a href="#" class="nav-button">About</a>
-    <a href="#" class="nav-button">Services</a>
+    <a href="products.html" class="nav-button">Products</a>
     <a href="contact.html" class="nav-button">Contact</a>
+    <a href="faq.html" class="nav-button">FAQ</a>
+    <a href="privacy.html" class="nav-button">Privacy</a>
+    <a href="terms.html" class="nav-button">Terms</a>
   </nav>
 
   <main>
-    <section>
-      <h1>Available Cars</h1>
+    <section class="hero">
+      <h1>Exclusive Luxury Cars</h1>
+      <p class="subtitle">Experience the pinnacle of automotive excellence</p>
     </section>
 
-    <!-- Product Containers -->
-    <div class="product-container">
-      <img src="../image/Bugatti Chiron Super Sport 300+.jpg" alt="Product 1">
-      <h2>Bugatti Chiron Super Sport 300+</h2>
-      <p>A high-speed hypercar with a quad-turbocharged W16 engine producing 1,577 hp.</p>
-      <p class="price">₱239,400,000</p>
+    <div class="products-grid">
+      <div class="product-card" data-price="239400000">
+        <div class="product-image">
+          <img src="../image/Bugatti Chiron Super Sport 300+.jpg" alt="Bugatti Chiron" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h2>Bugatti Chiron Super Sport 300+</h2>
+          <p>A high-speed hypercar with a quad-turbocharged W16 engine producing 1,577 hp.</p>
+          <p class="price">₱239,400,000</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-price="32000000">
+        <div class="product-image">
+          <img src="../image/Lamborghini Aventador SVJ.jpg" alt="Lamborghini" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h2>Lamborghini Aventador SVJ</h2>
+          <p>A naturally aspirated V12-powered supercar with extreme aerodynamics.</p>
+          <p class="price">₱32,000,000</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-price="42000000">
+        <div class="product-image">
+          <img src="../image/Ferrari SF90 Stradale.jpg" alt="Ferrari" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h2>Ferrari SF90 Stradale</h2>
+          <p>A hybrid supercar with 986 hp, combining a twin-turbo V8 with electric motors.</p>
+          <p class="price">₱42,000,000</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-price="60000000">
+        <div class="product-image">
+          <img src="../image/McLaren P1.jpg" alt="McLaren" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h2>McLaren P1</h2>
+          <p>A hybrid hypercar with a twin-turbo V8 and electric assist, 903 hp.</p>
+          <p class="price">₱60,000,000</p>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
     </div>
 
-    <div class="product-container">
-      <img src="../image/Lamborghini Aventador SVJ.jpg" alt="Product 2">
-      <h2>Lamborghini Aventador SVJ</h2>
-      <p>A naturally aspirated V12-powered supercar with extreme aerodynamics and track performance.</p>
-      <p class="price">₱32,000,000</p>
+    <div class="filters">
+      <button id="sort-price-asc">Sort by Price ↑</button>
+      <button id="sort-price-desc">Sort by Price ↓</button>
     </div>
-
-    <div class="product-container">
-      <img src="../image/Ferrari SF90 Stradale.jpg" alt="Product 3">
-      <h2>Ferrari SF90 Stradale</h2>
-      <p>A hybrid supercar with 986 hp, combining a twin-turbo V8 with electric motors.</p>
-      <p class="price">₱42,000,000</p>
-    </div>
-
-    <div class="product-container">
-      <img src="../image/McLaren P1.jpg" alt="Product 4">
-      <h2>McLaren P1</h2>
-      <p>A hybrid hypercar with a twin-turbo V8 and electric assist, delivering a total of 903 hp.</p>
-      <p class="price">₱60,000,000.</p>
-    </div>
-
-    <div class="product-container">
-      <img src="../image/Porsche 911 GT3 RS (992).jpg" alt="Product 5">
-      <h2>Porsche 911 GT3 RS (992)</h2>
-      <p>A track-focused supercar with a naturally aspirated flat-six and aerodynamic enhancements.</p>
-      <p class="price">₱16,000,000</p>
-    </div>
-
-    <div class="product-container">
-      <img src="../image/Koenigsegg Jesko.jpg" alt="Product 6">
-      <h2>Koenigsegg Jesko</h2>
-      <p>A Swedish hypercar with a twin-turbo V8 producing up to 1,600 hp on E85 fuel.</p>
-      <p class="price">₱180,000,000</p>
-    </div>
-
-    <div class="product-container">
-      <img src="../image/Aston Martin Valkyrie.jpg" alt="Product 7">
-      <h2>Aston Martin Valkyrie</h2>
-      <p>A hypercar developed with Red Bull Racing, featuring a naturally aspirated V12 and F1-inspired aerodynamics.</p>
-      <p class="price">₱150,000,000</p>
-    </div>
-
-    <button>
-      Order now
-    </button>
   </main>
 
   <div class="background"></div>
+  <script src="products.js"></script>
 </body>
 </html>
